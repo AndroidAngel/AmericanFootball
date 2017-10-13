@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#263238"
+    tools:context="com.teamandroidangel.iamangelauditor.americanfootball.MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity">
+
+            <TextView
+                style="@style/MyThemeAppForTeams"
+                android:id="@+id/teamA"
+                android:text="@string/team_a" />
+
+            <TextView
+                style="@style/MyThemeAppForScores"
+                android:id="@+id/teamAScore"
+                android:text="@string/_0"/>
+
+            <Button
+                style="@style/MyThemeAppForPoints"
+                android:id="@+id/sixPointsA"
+                android:text="@string/_6_points"
+                android:onClick="plusSixForTeamA"/>
+
+            <Button
+                style="@style/MyThemeAppForPoints"
+                android:id="@+id/threePointsA"
+                android:text="@string/_3_points"
+                android:onClick="plusThreeForTeamA"/>
+
+            <Button
+                style="@style/MyThemeAppForPoints"
+                android:id="@+id/twoPointsA"
+                android:layout_height="wrap_content"
+                android:text="@string/_2_points"
+
+                android:onClick="plusTwoForTeamA"/>
+
+            <Button
+                style="@style/MyThemeAppForPoints"
+                android:id="@+id/onePointsA"
+                android:text="@string/_1_points"
+                android:onClick="plusOneForTeamA"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:background="#FFD600"/>
+
+        <LinearLayout
+            android:id="@+id/main_activity"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity">
+
+            <TextView
+                style="@style/MyThemeAppForTeams"
+                android:id="@+id/teamB"
+                android:text="@string/team_b"/>
+
+            <TextView
+                style="@style/MyThemeAppForScores"
+                android:id="@+id/teamBScore"
+                android:text="@string/_0_b"/>
+
+            <Button
+                style="@style/MyThemeAppForPoints"
+                android:id="@+id/sixPointsB"
+                android:text="@string/_6_points_b"
+                android:onClick="plusSixForTeamB"/>
+
+            <Button
+                style="@style/MyThemeAppForPoints"
+                android:id="@+id/threePointsB"
+                android:text="@string/_3_points_b"
+                android:onClick="plusThreeForTeamB"/>
+
+            <Button
+                style="@style/MyThemeAppForPoints"
+                android:id="@+id/twoPointsB"
+                android:text="@string/_2_points_b"
+                android:onClick="plusTwoForTeamB"/>
+
+            <Button
+                style="@style/MyThemeAppForPoints"
+                android:id="@+id/onePointB"
+                android:text="@string/_1_points_b"
+                android:onClick="plusOneForTeamB"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:textStyle="bold"
+        android:background="#FFD600"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="resetScore"
+        android:text="@string/reset"/>
+
+</RelativeLayout>
