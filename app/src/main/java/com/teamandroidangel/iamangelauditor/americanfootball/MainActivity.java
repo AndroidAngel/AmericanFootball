@@ -62,13 +62,13 @@ public class MainActivity extends AppCompatActivity {
         displayScoreForTeamB(scoreForTeamB);
     }
 
-    public void displayScoreForTeamA(int score) {
+    public void displayScoreForTeamA(int scores) {
         TextView scoreTextView = (TextView)findViewById(R.id.teamAScore);
-        scoreTextView.setText(String.valueOf(score));
+        scoreTextView.setText(String.valueOf(scores));
     }
 
-    public void displayScoreForTeamB(int score){
+    public void displayScoreForTeamB(int scores){
         TextView scoreTextView = (TextView)findViewById(R.id.teamBScore);
-        scoreTextView.setText(String.valueOf(score));
+        scoreTextView.setText(String.valueOf(scores));
     }
 }
